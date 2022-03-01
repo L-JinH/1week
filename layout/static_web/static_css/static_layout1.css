@@ -1,0 +1,95 @@
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+figure,
+h1,
+header {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* 1. float */
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+  /* box-sizing: border-box; */
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo {
+  width: 200px;
+  height: 100%;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 100px;
+  float: left;
+}
+
+.nav {
+  width: 1000px;
+  height: 100%;
+  background-color: lightpink;
+  margin: 0;
+  float: right;
+}
+
+.figure {
+  width: 100%;
+  height: 300px;
+  background-color: skyblue;
+}
+
+.contents::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.container {
+  width: 33.333%;
+  height: 200px;
+  float: left;
+}
+
+.container:nth-child(odd) {
+  background-color: lightcoral;
+}
+
+.container:nth-child(even) {
+  background-color: lightgreen;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: lightsalmon;
+}
+
+.sns {
+  float: right;
+  width: 200px;
+  height: 100%;
+  background-color: lightblue;
+}
