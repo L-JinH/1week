@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.header {
+  height: 155px;
+  border-bottom: 1px solid #e4ebdc;
+}
+
+.header_top {
+  height: 30px;
+  background-color: #89b03f;
+}
+
+.slider {
+  height: 460px;
+  background-color: pink;
+}
+
+.best_item {
+  height: 1910px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  padding: 40px 0 60px;
+}
+
+.banner {
+  height: 360px;
+  box-sizing: border-box;
+  padding: 50px 0;
+}
+
+.review {
+}
