@@ -1,0 +1,116 @@
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+figure {
+  margin: 0;
+}
+
+/* layout - float */
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* style */
+/* all-width */
+.a_w {
+  width: 100%;
+}
+/* header, footer style */
+.h_f-style {
+  height: 100px;
+  background-color: lightblue;
+}
+/* small box style */
+.s_box {
+  width: 200px;
+  height: 100px;
+  background-color: lightsteelblue;
+}
+/* nav-box-sytle */
+.n_style {
+  width: 1000px;
+  height: 50px;
+}
+
+/* header */
+.header {
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header.logo {
+  float: left;
+}
+
+.header_nav {
+  background-color: lightcoral;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* slider */
+.figure {
+  height: 300px;
+  background-color: lightslategrey;
+}
+
+/* content */
+.contents {
+  height: 200px;
+}
+
+.contents::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.content {
+  width: 33.333%;
+  height: 100%;
+  float: left;
+}
+
+.content:nth-child(odd) {
+  background-color: bisque;
+}
+
+.content:nth-child(even) {
+  background-color: aquamarine;
+}
+
+/* footer */
+.footer {
+}
+
+.footer::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.footer_nav {
+  float: left;
+}
+
+.footer_top {
+  background-color: lightcoral;
+}
+
+.footer_bottom {
+  background-color: aqua;
+}
+
+.family_site {
+  float: right;
+}

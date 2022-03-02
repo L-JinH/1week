@@ -1,0 +1,109 @@
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+figure {
+  margin: 0;
+}
+
+/* 공통 스타일 */
+.a_w {
+  width: 100%;
+}
+
+.a_h {
+  height: 100%;
+}
+
+.s_w {
+  width: 200px;
+}
+
+.n_s {
+  width: 1000px;
+  height: 50px;
+}
+
+/* layout */
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  height: 100px;
+  background-color: #e8d9ff;
+  position: relative;
+}
+
+.logo {
+  background-color: #d1b2ff;
+  float: left;
+}
+
+.header_nav {
+  background-color: #a566ff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* main */
+/* slide */
+.figure {
+  height: 300px;
+  background-color: #8041d9;
+}
+
+/* contents */
+.contents {
+  height: 200px;
+}
+
+.contents::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.content {
+  width: 33.333%;
+  float: left;
+}
+
+.content:nth-child(odd) {
+  background-color: #3f0099;
+}
+
+.content:nth-child(even) {
+  background-color: #4641d9;
+}
+
+.footer {
+  height: 100px;
+}
+
+.footer-left {
+  width: 1000px;
+  height: 100%;
+  background-color: #e8d9ff;
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+
+.footer-right_top {
+  height: 50px;
+  background-color: #d1b2ff;
+}
+
+.footer-right_bottom {
+  height: 50px;
+  background-color: #a566ff;
+}

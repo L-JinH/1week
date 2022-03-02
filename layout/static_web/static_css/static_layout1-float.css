@@ -20,11 +20,17 @@ li {
   list-style: none;
 }
 
+/* sns, logo size */
+.small_box {
+  width: 200px;
+  height: 100%;
+  background-color: lightblue;
+}
+
 /* 1. float */
 #wrap {
   width: 1200px;
   margin: 0 auto;
-  /* box-sizing: border-box; */
 }
 
 .header {
@@ -39,9 +45,6 @@ li {
 }
 
 .logo {
-  width: 200px;
-  height: 100%;
-  background-color: lightblue;
   text-align: center;
   line-height: 100px;
   float: left;
@@ -89,7 +92,4 @@ li {
 
 .sns {
   float: right;
-  width: 200px;
-  height: 100%;
-  background-color: lightblue;
 }

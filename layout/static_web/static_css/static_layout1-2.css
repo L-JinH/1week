@@ -1,0 +1,24 @@
+.footer_left {
+  width: 600px;
+  height: 100%;
+  background-color: skyblue;
+  float: left;
+}
+
+.footer_right {
+  float: right;
+}
+
+.footer_right > .footer_r-top,
+.footer_r-bottom {
+  width: 200px;
+  height: 50px;
+}
+
+.footer_r-top {
+  background-color: pink;
+}
+
+.footer_r-bottom {
+  background-color: lightslategray;
+}

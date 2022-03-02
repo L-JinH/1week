@@ -1,0 +1,23 @@
+.small {
+  width: 200px;
+  height: 100%;
+  background-color: lightpink;
+}
+
+.footer_logo {
+  position: absolute;
+  left: 0;
+}
+
+.copy {
+  width: 400px;
+  height: 100%;
+  background-color: aquamarine;
+  position: absolute;
+  left: 200px;
+}
+
+.site {
+  position: absolute;
+  right: 0;
+}

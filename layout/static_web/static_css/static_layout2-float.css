@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+figure,
+h1 {
+  margin: 0;
+}
+
+/* 1. float */
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 공통 스타일. */
+/* 전체 width */
+.a_w {
+  width: 100%;
+}
+
+/* header, footer style */
+.h_f-style {
+  height: 100px;
+  background-color: lightblue;
+}
+
+/* logo style */
+.lo_s {
+  width: 200px;
+  height: 100%;
+  background-color: pink;
+  float: left;
+}
+
+/* footer-top, bottom style */
+.f_s {
+  width: 1000px;
+  height: 50px;
+  float: right;
+}
+
+/* header */
+.header {
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header_nav {
+  width: 1000px;
+  height: 50px;
+  /* float: right; */
+  background-color: lightgray;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* contents */
+.slider {
+  height: 300px;
+  background-color: lightcoral;
+}
+
+.contents {
+  height: 200px;
+}
+
+.contnet {
+  width: 33.333%;
+  height: 100%;
+  float: left;
+}
+
+.contnet:nth-child(odd) {
+  background-color: lightslategrey;
+}
+
+.contnet:nth-child(even) {
+  background-color: lightpink;
+}
+
+/* footer */
+.footer {
+}
+
+.footer::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.footer_nav {
+  background-color: lightsalmon;
+}
+
+.copy {
+  background-color: lightskyblue;
+}
