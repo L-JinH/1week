@@ -1,20 +1,74 @@
+/* reset */
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 figure {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+/* header */
 .header {
-  height: 155px;
+  height: 123.6px;
   border-bottom: 1px solid #e4ebdc;
 }
 
+.header_contents {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgb(187, 184, 184);
+}
+
 .header_top {
+  font-size: 13px;
   height: 30px;
   background-color: #89b03f;
+  box-shadow: 1px 1px 1px 1px #e4ebdc;
+}
+
+.header_top-left {
+}
+
+.header_top-left::after {
+  content: <i class= "fa fa-home" aria-hidden= "true" ></i>;
+}
+
+.header_top-left i,
+a,
+span {
+  color: #ffff;
+}
+
+.header_top-left-legion {
+}
+
+.header_middle {
+  height: 51px;
+  padding: 17px 0;
+  box-sizing: border-box;
+}
+
+.header_bottom {
+  height: 42.6px;
+}
+
+.header_bottom > .header_contents {
+  padding: 8px 0;
+  box-sizing: border-box;
 }
 
 .slider {
@@ -35,5 +89,34 @@ figure {
   padding: 50px 0;
 }
 
+.beauty_talk {
+  height: 2260px;
+  background-color: f5f7f2;
+  /* 지울 것. */
+  border: 1px solid green;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
 .review {
+  height: 625px;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+/* footer */
+.footer_top {
+  height: 270px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e4ebdc;
+}
+
+.footer_middle {
+  height: 42px;
+  border-bottom: 1px solid #e4ebdc;
+}
+
+.footer_bottom {
+  height: 180px;
+  padding: 20px 0;
 }
