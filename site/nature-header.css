@@ -1,0 +1,149 @@
+/****** header 공통 ******/
+.header {
+  height: 123.6px;
+  border-bottom: 1px solid #e4ebdc;
+}
+
+.header_contents {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgb(187, 184, 184);
+}
+
+/****** header top ******/
+.header_top {
+  font-size: 13px;
+  height: 30px;
+  background-color: #89b03f;
+  box-shadow: 1px 1px 1px 1px #e4ebdc;
+  line-height: 30px;
+}
+
+.header_top > .header_contents {
+  position: relative;
+  background-color: #89b03f; /*지울 것*/
+}
+
+/* header_top: left */
+.header_top-left::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header_top-left i,
+a,
+span {
+  color: #ffff;
+}
+
+.header_top-left-btn {
+  float: left;
+  margin-right: 25px;
+}
+
+/* header_top: right  */
+.header_top-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.header_top-right::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header_top-right > li {
+  float: right;
+  margin-left: 23px;
+  padding-left: 10px;
+}
+
+/****** header_middle ******/
+.header_middle {
+  height: 51px;
+  padding: 17px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header_middle > .header_contents {
+  background-color: #ffff;
+}
+
+.header_middle::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header_middle-left {
+  float: left;
+  z-index: 1;
+  position: relative;
+  top: -3px;
+  border: 1px solid black;
+}
+
+.header_middle-left i {
+  margin: 0 5px;
+}
+
+.header_slider {
+  width: 210px;
+  height: 100%;
+  text-align: center;
+  float: left;
+}
+
+.header_middle-middle {
+  float: left;
+}
+
+.header_middle-middle img {
+  margin: 0 auto;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+}
+
+.header_middle-right {
+  width: 200px;
+  height: 100%;
+  float: right;
+}
+
+.header_middle-right input {
+  height: 100%;
+  float: left;
+  z-index: 2;
+  position: relative;
+  top: -3px;
+}
+
+.header_middle-right i {
+  float: right;
+  height: 100%;
+}
+
+.header_middle-right::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/****** header_bottom ******/
+.header_bottom {
+  height: 42.6px;
+}
+
+.header_bottom > .header_contents {
+  padding: 8px 0;
+  box-sizing: border-box;
+  color: black;
+}

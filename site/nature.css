@@ -5,7 +5,8 @@ body {
   font-family: sans-serif;
 }
 
-figure {
+figure,
+ul {
   margin: 0;
 }
 
@@ -19,57 +20,6 @@ li {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
-
-/* header */
-.header {
-  height: 123.6px;
-  border-bottom: 1px solid #e4ebdc;
-}
-
-.header_contents {
-  width: 1180px;
-  height: 100%;
-  margin: 0 auto;
-  background-color: rgb(187, 184, 184);
-}
-
-.header_top {
-  font-size: 13px;
-  height: 30px;
-  background-color: #89b03f;
-  box-shadow: 1px 1px 1px 1px #e4ebdc;
-}
-
-.header_top-left {
-}
-
-.header_top-left::after {
-  content: <i class= "fa fa-home" aria-hidden= "true" ></i>;
-}
-
-.header_top-left i,
-a,
-span {
-  color: #ffff;
-}
-
-.header_top-left-legion {
-}
-
-.header_middle {
-  height: 51px;
-  padding: 17px 0;
-  box-sizing: border-box;
-}
-
-.header_bottom {
-  height: 42.6px;
-}
-
-.header_bottom > .header_contents {
-  padding: 8px 0;
-  box-sizing: border-box;
-}
 
 .slider {
   height: 460px;
