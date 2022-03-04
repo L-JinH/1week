@@ -2,13 +2,18 @@
 .header {
   height: 123.6px;
   border-bottom: 1px solid #e4ebdc;
+  background-color: #ffff;
+  box-shadow: 2px 2px 2px 2px #e4ebdc;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
 }
 
 .header_contents {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
-  background-color: rgb(187, 184, 184);
 }
 
 /****** header top ******/
@@ -18,11 +23,11 @@
   background-color: #89b03f;
   box-shadow: 1px 1px 1px 1px #e4ebdc;
   line-height: 30px;
+  font-weight: bold;
 }
 
 .header_top > .header_contents {
   position: relative;
-  background-color: #89b03f; /*지울 것*/
 }
 
 /* header_top: left */
@@ -32,9 +37,12 @@
   display: block;
 }
 
-.header_top-left i,
-a,
-span {
+.header_top-left {
+  color: #ffff;
+}
+
+.header_top-left a,
+.header_top-right a {
   color: #ffff;
 }
 
@@ -68,10 +76,6 @@ span {
   padding: 17px 0;
   box-sizing: border-box;
   position: relative;
-}
-
-.header_middle > .header_contents {
-  background-color: #ffff;
 }
 
 .header_middle::after {
@@ -124,6 +128,8 @@ span {
   z-index: 2;
   position: relative;
   top: -3px;
+  border: 1px solid #cbcec7;
+  /* border-style: none; */
 }
 
 .header_middle-right i {
@@ -140,10 +146,71 @@ span {
 /****** header_bottom ******/
 .header_bottom {
   height: 42.6px;
+  color: black;
+  font-weight: bold;
+}
+
+.header_bottom::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .header_bottom > .header_contents {
   padding: 8px 0;
   box-sizing: border-box;
-  color: black;
+}
+
+.header_bottom-left {
+  float: left;
+  height: 100%;
+  color: #222222;
+}
+
+.header_bottom-left::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header_bottom-left > li {
+  float: left;
+  margin-right: 50px;
+}
+
+/* .header_bottom-left > li:hover {
+  color: #89b03f;
+  border-bottom: 5px solid #89b03f;
+} */
+
+.event_image {
+  position: relative;
+  top: -7px;
+}
+
+.header_middle-icon {
+  float: right;
+  margin-right: 10px;
+}
+
+.header_middle-ico::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header_middle-icon > div {
+  float: right;
+  width: 22px;
+  height: 20px;
+  background-color: #89b03f;
+  color: #ffff;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 10px;
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
 }
